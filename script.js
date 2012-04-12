@@ -1,5 +1,4 @@
 $(function() {
-
 	var flip = function(element) {
 		var color = $(element).css('backgroundColor');
 		var opacity = $(element).css('opacity');
@@ -8,9 +7,6 @@ $(function() {
 		} else {
 			$(element).animate({ 'opacity': 0 });
 		}
-		console.log(element);
-		console.log(opacity);
-		console.log(color);
 	};
 		
 	var drawing = false;
@@ -21,12 +17,7 @@ $(function() {
 		}
 	});
 
-//	$(document).on('mousedown', 'div.pixels', function(ev) {
-//		ev.preventDefault();
-//	});
-
 	$(document).on('mousedown', 'div.pixels', function(ev) {
-		console.log("mousedown");
 		drawing = true;
 		if ($(ev.target).hasClass('pixel')) {
 			flip(ev.target);
@@ -35,7 +26,6 @@ $(function() {
 	});
 
 	$(document).on('mouseup', function(ev) {
-		console.log("mouseup");
 		drawing = false;
 	});
 
