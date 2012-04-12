@@ -1,0 +1,26 @@
+body {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+div.pixels {
+//	 border: 1px dashed grey;
+}
+
+div.row {
+	height: 11px;
+//	border: 1px dashed green;
+}
+
+div.pixel {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	margin-right: 1px;
+	margin-top: 1px;
+}
