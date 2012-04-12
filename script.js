@@ -2,12 +2,14 @@ $(function() {
 
 	var flip = function(element) {
 		var color = $(element).css('backgroundColor');
-		if (color === 'rgb(0, 0, 0)') {
-			$(element).css('backgroundColor', 'white');
+		var opacity = $(element).css('opacity');
+		if (opacity === '0') {
+			$(element).css('opacity', 1);
 		} else {
-			$(element).css('backgroundColor', 'black');
+			$(element).css('opacity', 0);
 		}
 		console.log(element);
+		console.log(opacity);
 		console.log(color);
 	};
 		
