@@ -33,7 +33,16 @@ div.pixel {
 	margin-right: 1px;
 	margin-bottom: 1px;
 
-	cursor: arrow;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div {
+	cursor: crosshair;
 }
 
 div.pixel:nth-child(odd) {

@@ -21,11 +21,19 @@ $(function() {
 		}
 	});
 
-	$(document).on('mousedown', 'div.pixel', function(ev) {
+//	$(document).on('mousedown', 'div.pixels', function(ev) {
+//		ev.preventDefault();
+//	});
+
+	$(document).on('mousedown', 'div.pixels', function(ev) {
 		console.log("mousedown");
 		drawing = true;
-		flip(ev.target);
+		if ($(ev.target).hasClass('pixel')) {
+			flip(ev.target);
+		}
+		ev.preventDefault();
 	});
+
 	$(document).on('mouseup', function(ev) {
 		console.log("mouseup");
 		drawing = false;
@@ -33,12 +41,12 @@ $(function() {
 
 	var populate = function() {
 		var y;
-		var width = 10;
+		var width = 64;
 		var height = width;
 		for (y = 0; y < height; y++) {
 			var row = $("<div class='row'></div>");
 			for (x = 0; x < width; x++) {
-				row.append($("<div class='pixel'></div>"));
+				row.append($("<div class='pixel' draggable='false'></div>"));
 			}
 			$("div.pixels").append(row);
 		}
