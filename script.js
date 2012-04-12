@@ -4,9 +4,9 @@ $(function() {
 		var color = $(element).css('backgroundColor');
 		var opacity = $(element).css('opacity');
 		if (opacity === '0') {
-			$(element).css('opacity', 1);
+			$(element).animate({ 'opacity': 1 });
 		} else {
-			$(element).css('opacity', 0);
+			$(element).animate({ 'opacity': 0 });
 		}
 		console.log(element);
 		console.log(opacity);
