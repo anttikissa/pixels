@@ -2,25 +2,57 @@ body {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+h1 {
+	text-align: center;
+}
+
 div {
 	margin: 0;
 	padding: 0;
 }
 
 div.pixels {
-//	 border: 1px dashed grey;
+	display: inline-block;
+	border: 1px solid grey;
+	padding: 4px;
+	-webkit-border-radius: 3px;
+	margin: 0 auto;
 }
 
 div.row {
 	height: 11px;
-//	border: 1px dashed green;
+	background-color: #eee;
 }
 
 div.pixel {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	background-color: black;
+	background-color: white;
 	margin-right: 1px;
-	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+div.pixel:nth-child(odd) {
+	background-color: black;
+}
+
+div.row:nth-child(odd) div.pixel:nth-child(odd) {
+	background-color: white;
+}
+
+div.row:nth-child(odd) div.pixel:nth-child(even) {
+	background-color: black;
+}
+
+div.row:last-child {
+	height: 10px;
+}
+
+div.row:last-child > div.pixel {
+	margin-bottom: 0;
+}
+
+div.pixel:last-child {
+	margin-right: 0;
 }
