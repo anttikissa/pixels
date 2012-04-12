@@ -31,7 +31,7 @@ $(function() {
 
 	var populate = function() {
 		var y;
-		var width = 64;
+		var width = 32;
 		var height = width;
 		for (y = 0; y < height; y++) {
 			var row = $("<div class='row'></div>");

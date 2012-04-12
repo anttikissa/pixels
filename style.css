@@ -20,14 +20,14 @@ div.pixels {
 }
 
 div.row {
-	height: 11px;
-	background-color: #eee;
+	height: 21px;
+	background-color: #ddd;
 }
 
 div.pixel {
 	display: inline-block;
-	width: 10px;
-	height: 10px;
+	width: 20px;
+	height: 20px;
 	background-color: black;
 	opacity: 0;
 	margin-right: 1px;
