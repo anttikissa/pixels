@@ -36,7 +36,7 @@ $(function() {
 		for (y = 0; y < height; y++) {
 			var row = $("<div class='row'></div>");
 			for (x = 0; x < width; x++) {
-				row.append($("<div class='pixel' draggable='false'></div>"));
+				row.append($("<div class='pixel'></div>"));
 			}
 			$("div.pixels").append(row);
 		}
