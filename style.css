@@ -58,7 +58,7 @@ div.row:nth-child(odd) div.pixel:nth-child(even) {
 }
 
 div.row:last-child {
-	height: 21px;
+	height: 20px;
 }
 
 div.row:last-child > div.pixel {
