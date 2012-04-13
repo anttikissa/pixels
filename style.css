@@ -4,6 +4,7 @@ body {
 
 h1 {
 	text-align: center;
+	margin: 20px 0 23px 0;
 }
 
 div {
@@ -21,7 +22,7 @@ div.pixels {
 
 div.row {
 	height: 21px;
-	background-color: #ddd;
+	background-color: #eee;
 }
 
 div.pixel {
